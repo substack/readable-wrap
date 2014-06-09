@@ -4,7 +4,7 @@
   "description": "upgrade streams1 to streams2 streams as a standalone module",
   "main": "index.js",
   "dependencies": {
-    "readable-stream": "~1.1.13-1"
+    "readable-stream": "^1.1.13-1"
   },
   "devDependencies": {
     "tape": "~2.12.1",
