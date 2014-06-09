@@ -56,9 +56,12 @@ function wrap (stream, opts) {
 
   // proxy certain important events.
   var events = ['error', 'close', 'destroy', 'pause', 'resume'];
-  events.forEach(function(ev) {
-    stream.on(ev, self.emit.bind(self, ev));
-  });
+  for (var i = 0; i < events.length; i++) (function (ev) {
+    stream.on(ev, function () {
+      var args = [ ev ].concat([].slice.call(arguments));
+      self.emit.apply(self, args);
+    })
+  })(events[i]);
 
   // when we try to consume some more bytes, simply unpause the
   // underlying stream.
