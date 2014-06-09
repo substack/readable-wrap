@@ -9,6 +9,10 @@ Use this module if you don't want to wait for
 [a patch in node core](https://github.com/joyent/node/pull/7758)
 to land that fixes falsey objectMode values in wrapped readable streams.
 
+[![build status](https://secure.travis-ci.org/substack/readable-wrap.png)](http://travis-ci.org/substack/readable-wrap)
+
+[![testling badge](https://ci.testling.com/substack/readable-wrap.png)](https://ci.testling.com/substack/readable-wrap)
+
 # example
 
 ``` js
