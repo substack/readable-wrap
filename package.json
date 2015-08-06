@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "upgrade streams1 to streams2 streams as a standalone module",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "dependencies": {
     "readable-stream": "^2.0.2"
   },
